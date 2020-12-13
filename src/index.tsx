@@ -3,14 +3,11 @@ import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { ServiceWorker } from './serviceWorker';
 import { AppRouterOutlet } from './app/routing/app-router-outlet.component';
-import { App } from './app/app.component';
 import { APP_ROUTES } from './app/routing/app.routing';
 
 render((
   <BrowserRouter>
-    <App>
-      <AppRouterOutlet routes={APP_ROUTES}/>
-    </App>
+    <AppRouterOutlet routes={APP_ROUTES}/>
   </BrowserRouter>
 ), document.querySelector('#app'));
 
